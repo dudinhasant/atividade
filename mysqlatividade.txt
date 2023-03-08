@@ -1,0 +1,23 @@
+  cpf int(11) not null,
+  nome varchar(50) not null,
+  datanascimento int(8) not null,
+  endereco varchar(50) not null,
+  cep varchar(8) not null,
+  bairro varchar(30) not null,
+  cidade varchar(30) not null,
+  uf varchar(2) not null,
+  PRIMARY KEY(cpf)
+);
+
+insert into clientes (cpf, nome, datanascimento, endereco, cep, bairro, cidade, uf) values (04496332780, 'João da Silva', 
+25111969, 'Rua Antônio Numes', 88045963, 'Palmeiras', 'Londrina', 'PR');
+
+insert into clientes (cpf, nome, datanascimento, endereco, cep, bairro, cidade, uf) values (05485031490, 'Ana Regina Fagundes', 
+21091986, 'Rua Palmeias Novas', 88045963, 'Leblon', 'Rio de Janeiro', 'RJ');
+
+insert into clientes (cpf, nome, datanascimento, endereco, cep, bairro, cidade, uf) values (03350314905, 'Fernando Soares', 
+05031990, 'Rua Palmeias Novas', 88048917, 'Copacabana', 'Rio de Janeiro', 'RJ');
+
+select * clientes where cidade = 'Rio de Janeiro';
+
+delete from clientes where cidade = 'Londrina';
